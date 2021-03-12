@@ -653,9 +653,6 @@
         });
 
         $("#btn_drop").click(function($event) {
-            $("#step_drop").css('display','none');
-            $("#step_houses").css('display','block');
-            $("#p_bar").css('width','60%');
 
 			properties.loanbalance = $("#loanbalance").val();
 			properties.propertyvalue = $("#propertyvalue").val();
@@ -669,9 +666,15 @@
 
                 properties.targettree = 'https://ck.lendingtree.com/?a=568&c=3531&s1='+uid+'&s2=1000';
 
+                window.location.href = properties.targettree;
+
                 return false;
 
-            }	
+            }
+
+            $("#step_drop").css('display','none');
+            $("#step_houses").css('display','block');
+            $("#p_bar").css('width','60%');
         });
 
         $("#single, #townhome, #condo, #multi, #mobile").click(function($event) {
@@ -704,12 +707,14 @@
 
             properties.utm = $("#utm_source").val();
 
-            if (properties.targettree != undefined &&  properties.targettree != '') {
-                window.location.href = properties.targettree;
-            } else {
+
+            //if (properties.targettree != undefined &&  properties.targettree != '') {
+            //    window.location.href = properties.targettree;
+            //} else {
+
                 var parameters = "zipcode="+properties.zipcode+"&state="+properties.state+"&creditscore="+properties.creditscore+"&loanbalance="+properties.loanbalance+"&propertyvalue="+properties.propertyvalue+"&propertytype="+properties.propertytype;
-                window.location.href ='https://comparehomelenders.com/main/thanksresults.html?'+parameters+'?utm_source='+properties.utm;
-            }
+                window.location.href ='https://comparehomelenders.com/thanksresults.html?'+parameters+'?utm_source='+properties.utm;
+            //}
 
             return false;
         })
