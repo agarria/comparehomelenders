@@ -662,6 +662,7 @@
         });
 
 		var properties = {
+            homeowner: "",
 			zipcode: "",
             state: "",
             creditscore: "",
@@ -670,10 +671,20 @@
             propertytype: ""
 		}
 		
-        $("#btn_yes, #btn_no").click(function() {
+        $("#btn_yes, #btn_no").click(function($event) {
             $("#step_1").css('display','none');
             $("#step_2").css('display','block');
             $("#p_bar").css('width','20%');
+
+            if ($event.currentTarget.id == 'btn_yes'){
+                properties.homeowner = "yes";
+            }
+            if ($event.currentTarget.id == 'btn_no'){
+                properties.homeowner = "no";
+            }
+
+            console.log("properties: " + JSON.stringify(properties));
+
         });
 
         $("#excellent, #good, #fair, #poor").click(function($event) {
@@ -707,7 +718,7 @@
                 properties.loanbalance = 100000;
             }
 
-            if (properties.loanbalance >= 250000 && properties.propertyvalue >= 350000 && properties.creditscore == "Excellent") {
+            if (properties.loanbalance >= 250000 && properties.propertyvalue >= 350000 && properties.creditscore == "Excellent" && properties.homeowner == "yes") {
                 var uid = create_UUID();
 
                 properties.targettree = 'https://ck.lendingtree.com/?a=568&c=3531&s1='+uid+'&s2=1000';
