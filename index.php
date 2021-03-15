@@ -615,6 +615,15 @@
 
     $(document).ready(function() {
 
+
+        function getUrlParameter(sParam) {
+            var sParameterName = getInitialUrlParameter(sParam);
+            if (sParameterName===undefined)
+            return ''
+            else
+            return sParameterName;
+        }
+
         function getInitialUrlParameter(sParam) {
             var sPageURL = window.location.search.substring(1),
                   sURLVariables = sPageURL.split('&'),
@@ -632,7 +641,7 @@
                 }
         }
 
-        document.getElementById("utm_source").value = getInitialUrlParameter('utm_source');
+        document.getElementById("utm_source").value = getUrlParameter('utm_source');
 
 		var properties = {
             homeowner: "",
@@ -742,7 +751,7 @@
             //} else {
 
                 var parameters = "zipcode="+properties.zipcode+"&state="+properties.state+"&creditscore="+properties.creditscore+"&loanbalance="+properties.loanbalance+"&propertyvalue="+properties.propertyvalue+"&propertytype="+properties.propertytype;
-                window.location.href ='https://comparehomelenders.com/thanksresults.html?'+parameters+'?utm_source='+properties.utm;
+                window.location.href ='https://comparehomelenders.com/thanksresults.html?'+parameters+'&SourceID='+properties.utm;
             //}
 
             return false;
