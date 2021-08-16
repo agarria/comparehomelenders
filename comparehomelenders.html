@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="index, follow">
+    <meta name="autor" content="Alex García">
+    <meta name="keywords" content="compare, home, lenders, cash, house, homeowners, program, condo, fast, access">
+    <meta name="description" content="This little known program gives homeowners access to cash.">
+    <link rel="canonical" href="https://comparehomelenders.com">
+    <link rel="icon" type="image/jpg" href="favicon.png">
+    <title>Compare Home Lenders</title>
+    <meta property="og:url" content="https://comparehomelenders.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Compare Home Lenders">
+    <meta property="og:title" content="Compare Home Lenders">
+    <meta property="og:description" content="This little known program gives homeowners access to cash.">
+    <meta property="og:image" content="thumbnail.png">
+    <link rel="stylesheet" type="text/css" href="comparehomelenders.css">
+    <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-GPZWHYP405" async></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GPZWHYP405');
+    </script>
+</head>
+
+<body>
+    <nav>
+        <a href="https://comparehomelenders.com/" class="logo">
+            <i class="fas fa-home"></i>
+            Compare<br>HomeLenders.com
+        </a>
+        <div class="links">
+            <span class="tag">
+                <span class="icon">
+                    <i class="fas fa-flag-usa"></i>
+                </span>
+                <span class="rating">
+                    <label class="official">US Rankings <span class="year"></span></label>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </span>    
+            </span>
+        </div>
+    </nav>
+    <!--
+    <div class="overlay">
+        <div class="form">
+            <div class="pending">
+                <span id="bar" class="bar"></span>
+            </div>
+            <form>
+                <div class="question">
+                    <span class="question-name">Zip code</span>
+                    <input id="zip" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Enter your zip code">
+                    <input id="city" style="display: none;" type="text">
+                    <input id="state" style="display: none;" type="text">
+                    <input id="short" style="display: none;" type="text">
+                    <span class="error">Invalid zip code. Please try again!</span>
+                    <button id="continue">Continue</button>
+                </div>
+                <div class="question">
+                    <span class="question-name">Do you own your home?</span>
+
+                    <div class="buttons">
+                        <span id="homeowner_yes" class="response default">Yes</span>
+                        <span id="homeowner_no" class="response">No</span>
+                    </div>
+                </div>
+                <div class="question">
+                    <span class="question-name">Are you currently insured?</span>
+                    <div class="buttons">
+                        <span id="insured_yes" class="response default">Yes</span>
+                        <span id="insured_no" class="response">No</span>
+                    </div>
+                </div>
+            </form>
+            <span class="helper">No contact information or SSN needed</span>
+        </div>
+    </div>
+    -->
+    <main>
+        <header id="header">
+            <div class="info">
+                <span class="head">Compare <i>Home Lender</i> Rates in <span class="location"></span> <span class="year"></span></span>
+                <span class="head-sub"><b>Compare Home Lenders, Mortgage Loan Rates, and more!</b><br><br>Compare top mortgage refinance lenders and review competitive rates in minutes. Find a rate rate, lower your monthly mortgage payment, take cash out and pay less interest.</span>
+                <span id="update" class="update"></span>
+                <span class="disclaimer">
+                    <span class="open"><i class="fas fa-file-contract"></i>Advertiser Discloser</span>
+                    <span class="text">
+                        <script>document.write(window.location.hostname); </script> is a free online resource and we work hard to better the decision-making process of buying insurance online. To support this endeavor we may at times collect revenue from advertisers for qualified consumers who visit their site. Such compensation may impact the placement and order of our advertising partners on our page. We are not compensated for consumers who only view our content and work hard to provide a comprehensive list of quality insurance brands. 
+                    </span>
+                </span>
+            </div>
+        </header>
+        <div class="filter">
+            <div class="pill">
+                <i class="fas fa-map-marker-alt"></i><span class="region"></span>
+            </div>
+            <div class="action">
+                <input type="text" id="zip" name="zip" placeholder="Enter Zip Code...">
+                <button>Filter</button>
+            </div>
+        </div>
+        <section class="list">
+            <iframe id="results" scrolling="no" src="https://www.home.ins-compare.com/home.results.html" sandbox="allow-forms allow-scripts allow-same-origin allow-presentation allow-top-navigation allow-popups"></iframe>
+        </section>
+        <div class="loans">
+            <div class="chunk">
+                <div class="loan">
+                    <span class="type"><i class="fas fa-tag"></i>Purchase Loan:</span>
+                    <span class="desc">
+                        There are a few main types of mortgage loans widely used in the US to purchase a home.  Government insured loans such as an FHA loan for 1st time home buyers  are backed by the government and provide lenders some security against default.  These loans require the borrower to meet certain guidelines and pay PMI insurance on top of the loan amount but require a lower down payment.  
+                        <br><br>
+                        Conventional loans on the other hand do not provide the lender any security against default so interest rates, down payments, and fees can be higher.  Most conventional loans are competitive from major lenders but ultimately it depends on the individual borrower, their financial standing, and ability to repay the loan. 
+                    </span>
+                </div>
+                <div class="loan">
+                    <span class="type"><i class="fas fa-house-user"></i>Refinance Loan:</span>
+                    <span class="desc">
+                        If securing a loan to finance a borrower's existing home a refinance loan is the way to go.  A refinance loan replaces an existing loan on a home with a new loan that has new terms. Many times borrowers are looking for a lower rate which can lower their monthly payment but borrowers should beware that a lower rate is not always best in the long run.  
+                        <br><br>
+                        While refinancing can lower once rate it effectively resets the life of the loan extending the period of which borrowers pay the lender interest.  If not managed property borrowers can find themselves paying interest on their home forever making little dent in the actual principal balance. 
+                    </span>
+                </div>
+            </div>
+            <div class="chunk">
+                <div class="loan">
+                    <span class="type"><i class="fas fa-home"></i>Home Equity Loan:</span>
+                    <span class="desc">
+                        A home equity loan or "second mortgage" is a loan against the equity a borrower has in their home. Equity is the difference between the market value of a home and the balance remaining on loan.  Lenders allow borrowers to take out an additional loan or second mortgage against this equity.  
+                        <br><br>
+                        Home equity loans come in various forms.  A home equity loan as well as a home equity line of credit.  With a home equity loan the borrower secures a loan for a specific amount against their equity with a set term and rate whereas a home equity line of credit provides borrowers a line of credit to draw against like a credit card. Each has their pros and cons and should be researched well before one decides what option is best. 
+                    </span>
+                </div>
+                <div class="loan">
+                    <span class="type"><i class="far fa-hand-point-left"></i>Reverse Mortgage Loan:</span>
+                    <span class="desc">
+                        A reverse mortgage is a loan against a property that is typically owned outright without a loan. Typically targeting older homeowners with 100% or a large amount of equity a reverse mortgage provides the borrower income. 
+                    </span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://comparehomelenders.com/" class="logo">
+                <i class="fas fa-home"></i>
+                Compare<br>HomeLenders.com
+            </a>
+            <div class="links">
+                <a href="privacy.html">privacy policy</a>
+                <a href="terms.html">terms & conditions</a>
+            </div>
+            <span class="copy"><span class="year"></span> © <script>document.write(window.location.hostname); </script> All Rights Reserved</span>
+        </footer>
+    </main>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script type="text/javascript" src="https://cdn.myadoptimizer.com/maojsfiles/landingpagesjs/09070b21-dbb5-4a9f-823b-9eba588a2c91.js"></script>
+<script src="https://kit.fontawesome.com/4c9962e02c.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+    document.getElementsByClassName("year")[0].innerHTML = new Date().getFullYear();
+    document.getElementsByClassName("year")[1].innerHTML = new Date().getFullYear();
+    document.getElementsByClassName("year")[2].innerHTML = new Date().getFullYear();
+
+    function is_int(value) {
+        if ((parseFloat(value) == parseInt(value)) && !isNaN(value)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    var properties = {
+        zipcode: "",
+        state: "",
+        homeowner: "",
+        insured: ""
+    }
+
+    $( document ).ready(function() {
+        $("#bar").css('width','calc(100% / 3)');
+
+        jQuery.get("https://ipinfo.io", function(response) {
+            $("#zip").val(response.postal);
+            $(".location").html(response.region);
+            $(".region").html(response.city);
+        }, "jsonp");
+
+        $(".open").click(function(){
+            $(".text").toggleClass("show");
+        });
+
+        $("#zip").keyup(function() {
+            var el = $(this);
+            if ((el.val().length == 5) && (is_int(el.val()))) {
+
+                $.ajax({
+                    url: "https://zip.getziptastic.com/v2/US/" + el.val(),
+                    cache: false,
+                    dataType: "json",
+                    type: "GET",
+                    success: function(result, success) {
+                        $(".error").css('display','none');
+                        $("#city").val(result.city);
+                        $("#state").val(result.state);
+                        $("#short").val(result.state_short);
+                        $("#continue").css('display','block');
+                    },
+                    error: function(result, success) {
+                        $(".error").css('display','block');
+                        $("#continue").css('display','none');
+
+                    }
+                });
+
+            } else if (el.val().length < 5) {
+
+                $(".error").css('display','block');
+                $("#continue").css('display','none');
+
+                return false;
+
+            };
+        });
+
+        $("#continue").click(function(){
+
+            if ( $("#zip").val().length === 0 ) {
+                alert("Please enter your zip code.");
+            } else {
+                $(".question:nth-child(1)").css('display','none');
+                $(".question:nth-child(2)").css('display','block');
+                $("#bar").css('width','calc((100% / 3) * 2)');
+
+                return false;
+            }
+
+        });
+
+        $('#homeowner_yes,#homeowner_no').click(function($event){
+            $(".question:nth-child(2)").css('display','none');
+            $(".question:nth-child(3)").css('display','block');
+            $("#bar").css('width','calc((100% / 3) * 3)');
+
+
+            if ($event.currentTarget.id == 'homeowner_yes'){
+                properties.homeowner = "Yes";
+            }
+            if ($event.currentTarget.id == 'homeowner_no'){
+                properties.homeowner = "No";
+            }
+
+        });
+
+        $('#insured_yes,#insured_no').click(function($event){
+                $(".overlay").css('display','none');
+                $("html").css('overflow-y','auto');
+
+                properties.zipcode = $("#zip").val();
+                properties.state = $("#short").val();
+                
+                if ($event.currentTarget.id == 'insured_yes'){
+                    properties.insured = "Yes";
+                }
+                if ($event.currentTarget.id == 'insured_no'){
+                    properties.insured = "No";
+                }
+
+                frame.src = frame.src + "?ZipCode="+properties.zipcode+"&State="+properties.state+"&HomeOwner="+properties.homeowner+"&InsuredStatus="+properties.insured;
+        });
+    });
+
+    var frame = document.getElementById("results");
+    frame.onload = function(){
+
+    }
+
+    function reSizeIframe(){
+        frame.style.height = frame.contentWindow.document.getElementById("target").offsetHeight + "px";
+    }
+
+    var date = new Date();
+    date.setDate(date.getDate());
+
+    document.getElementById('update').innerHTML="Last Updated: "+date.toLocaleString();
+</script>
+</html>
