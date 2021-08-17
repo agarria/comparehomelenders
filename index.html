@@ -53,32 +53,41 @@
             </span>
         </div>
     </nav>
-    <!--
-    <div class="overlay">
+    <div id="overlay" class="overlay">
         <div class="form">
             <div class="pending">
                 <span id="bar" class="bar"></span>
             </div>
             <form>
                 <div class="question">
-                    <span class="question-name">Zip code</span>
-                    <input id="zip" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Enter your zip code">
-                    <input id="city" style="display: none;" type="text">
-                    <input id="state" style="display: none;" type="text">
-                    <input id="short" style="display: none;" type="text">
-                    <span class="error">Invalid zip code. Please try again!</span>
-                    <button id="continue">Continue</button>
-                </div>
-                <div class="question">
-                    <span class="question-name">Do you own your home?</span>
-
+                    <span class="question-name">Mortgage Type</span>
+                    <input id="ziphelper" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" disabled>
+                    <input id="city" type="text" disabled>
+                    <input id="state" type="text" disabled>
+                    <input id="short" type="text" disabled>
                     <div class="buttons">
-                        <span id="homeowner_yes" class="response default">Yes</span>
-                        <span id="homeowner_no" class="response">No</span>
+                        <span id="refinance_yes" class="response default">Refinance</span>
+                        <span id="purchase_no" class="response">Purchase</span>
                     </div>
                 </div>
                 <div class="question">
-                    <span class="question-name">Are you currently insured?</span>
+                    <span class="question-name">Credit Score:</span>
+                    <div class="buttons">
+                        <span id="excellent" class="response">Excellent (720 to 850)</span>
+                        <span id="good " class="response default">Good (690 to 719)</span>
+                        <span id="fair" class="response">Fair (630 to 689)</span>
+                        <span id="poor" class="response">Poor (300 to 629)</span>
+                    </div>
+                </div>
+                <div class="question">
+                    <span class="question-name">Loan Amount:</span>
+                    <div class="buttons">
+                        <span id="fair" class="response">Fair (630 to 689)</span>
+                        <span id="poor" class="response">Poor (300 to 629)</span>
+                    </div>
+                </div>
+                <div class="question">
+                    <span class="question-name">Property Value:</span>
                     <div class="buttons">
                         <span id="insured_yes" class="response default">Yes</span>
                         <span id="insured_no" class="response">No</span>
@@ -88,7 +97,6 @@
             <span class="helper">No contact information or SSN needed</span>
         </div>
     </div>
-    -->
     <main>
         <header id="header">
             <div class="info">
@@ -107,10 +115,10 @@
             <div class="pill">
                 <i class="fas fa-map-marker-alt"></i><span class="region"></span>
             </div>
-            <div class="action">
-                <input type="text" id="zip" name="zip" placeholder="Enter Zip Code...">
+            <form id="action" class="action" action="" method="post">
+                <input type="number" pattern="[0-9]*" id="zip" name="zip" placeholder="Enter Zip Code..." required>
                 <button>Filter</button>
-            </div>
+            </form>
         </div>
         <section class="list">
             <iframe id="results" scrolling="no" src="https://agarria.github.io/comparehomelenders/results.html" sandbox="allow-forms allow-scripts allow-same-origin allow-presentation allow-top-navigation allow-popups"></iframe>
@@ -152,15 +160,6 @@
             </div>
         </div>
         <footer>
-            <a href="https://comparehomelenders.com/" class="logo">
-                <i class="fas fa-home"></i>
-                Compare<br>HomeLenders.com
-            </a>
-            <div class="links">
-                <a href="privacy.html">privacy policy</a>
-                <a href="terms.html">terms & conditions</a>
-            </div>
-            <span class="copy"><span class="year"></span> © <script>document.write(window.location.hostname); </script> All Rights Reserved</span>
         </footer>
     </main>
 </body>
@@ -184,9 +183,11 @@
     var properties = {
         zipcode: "",
         state: "",
-        homeowner: "",
-        insured: ""
+        creditscore: "",
+        loanbalance: "",
+        propertytype: ""
     }
+
 
     $( document ).ready(function() {
         $("#bar").css('width','calc(100% / 3)');
@@ -199,6 +200,13 @@
 
         $(".open").click(function(){
             $(".text").toggleClass("show");
+        });
+
+        $('#action').submit(function() {
+
+            alert("Working event.");
+
+            return false;
         });
 
         $("#zip").keyup(function() {
@@ -277,7 +285,7 @@
                     properties.insured = "No";
                 }
 
-                frame.src = frame.src + "?ZipCode="+properties.zipcode+"&State="+properties.state+"&HomeOwner="+properties.homeowner+"&InsuredStatus="+properties.insured;
+                frame.src = frame.src + "?ZipCode="+properties.zipcode+"&State="+properties.state+"&creditscore="+properties.creditscore+"&loanbalance="+properties.loanbalance+"&propertytype="+properties.propertytype;
         });
     });
 

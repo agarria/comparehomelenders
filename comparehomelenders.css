@@ -563,6 +563,10 @@ header {
     background: rgba(0,0,0,0.5);
 }
 
+.auto {
+    display: flex;
+}
+
 .form {
     position: relative;
     display: block;
@@ -606,7 +610,7 @@ header {
     float: left;
     width: calc(100% / 5);
     height: 100%;
-    background: #FF9E1F;
+    background: #2f5597;
     transition: all .3s ease;
 }
 
@@ -804,7 +808,7 @@ form button:active {
 
 .default {
     color: #fff;
-    background: #FF9E1F;
+    background: #2f5597;
 }
 
 .filter {
@@ -889,6 +893,12 @@ form button:active {
     background: #2f5597;
     border: 2px solid #ddd;
     border-radius: 0 10px 10px 0;
+}
+
+.action button:hover,
+.action button:active,
+.action button:focus {
+    border: 2px solid #ddd;
 }
 
 .loans {
@@ -1245,7 +1255,7 @@ form button:active {
         float: right;
         width: 100%;
         height: auto;
-        padding: 5% 14%;
+        padding: 5% 10%;
         margin: 0;
     }
 
