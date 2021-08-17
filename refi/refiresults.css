@@ -71,7 +71,7 @@ nav {
 
 .logo i {
     font-size: 30px;
-    color: #2f5597;
+    color: #cc3300;
     margin: 0 5px 0 0;
 }
 
@@ -111,7 +111,7 @@ nav {
     margin: 0;
     font-size: 18px;
     color: #fff;
-    background: #2f5597;
+    background: #cc3300;
     border-radius: 5px 0 0 5px;
 }
 
@@ -125,7 +125,7 @@ nav {
     margin: 0;
     font-size: 12px;
     font-weight: 700;
-    border: 4px solid #2f5597;
+    border: 4px solid #cc3300;
     border-left: 0;
     border-radius: 0 5px 5px 0;
 }
@@ -137,7 +137,7 @@ nav {
     line-height: 1;
     padding: 0;
     margin: 0 0 5px 0;
-    color: #2f5597;
+    color: #cc3300;
     text-transform: uppercase;
 }
 
@@ -174,16 +174,16 @@ footer {
 }
 
 footer .logo {
-    color: #2f5597;
+    color: #cc3300;
     font-size: 18px;
 }
 
 footer .logo:hover {
-    color: #2f5597;
+    color: #cc3300;
 }
 
 footer .logo i {
-    color: #2f5597;
+    color: #cc3300;
     font-size: 34px;
 }
 
@@ -334,7 +334,7 @@ header {
     height: auto;
     padding: 2% 14%;
     margin: 0;
-    background: #2f5597;
+    background: #cc3300;
 }
 
 .info {
@@ -373,7 +373,7 @@ header {
 
 .head i {
     font-style: normal;
-    color: #ffcc00;
+    color: #ff9966;
 }
 
 .update {
@@ -841,7 +841,7 @@ form button:active {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background: #2f5597;
+    background: #cc3300;
     border-radius: 10px;
 }
 
@@ -870,7 +870,7 @@ form button:active {
     margin: 0;
     font-size: 14px;
     font-weight: 700;
-    color: #2f5597;
+    color: #cc3300;
     background: #fff;
     border: 2px solid #ddd;
     border-right: 0;
@@ -879,7 +879,7 @@ form button:active {
 }
 
 .action input::placeholder {
-    color: #2f5597;
+    color: #cc3300;
 }
 
 .action button {
@@ -896,7 +896,7 @@ form button:active {
     font-weight: 700;
     outline: 0;
     cursor: pointer;
-    background: #2f5597;
+    background: #cc3300;
     border: 2px solid #ddd;
     border-radius: 0 10px 10px 0;
 }
@@ -947,7 +947,7 @@ form button:active {
 .type,
 .desc {
     float: left;
-    color: #2f5597;
+    color: #333;
 }
 
 .type {
@@ -961,7 +961,7 @@ form button:active {
 
 .type i {
     font-size: 28px;
-    color: #ffcc00;
+    color: #ff9966;
     margin: 0 5px 0 0;
 }
 
@@ -1046,7 +1046,7 @@ form button:active {
         width: 100%;
         margin: 0 0 5px 0;
     }
-
+    
     .big {
         font-size: 16px;
         margin: 0 0 15% 0;

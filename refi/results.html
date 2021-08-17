@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="index, follow">
+    <meta name="autor" content="Alex García">
+    <meta name="keywords" content="compare, home, lenders, cash, house, homeowners, program, condo, fast, access">
+    <meta name="description" content="This little known program gives homeowners access to cash.">
+    <link rel="canonical" href="https://comparehomelenders.com">
+    <link rel="icon" type="image/jpg" href="favicon.png">
+    <title>Results</title>
+    <meta property="og:url" content="https://comparehomelenders.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Compare Home Lenders">
+    <meta property="og:title" content="Compare Home Lenders">
+    <meta property="og:description" content="This little known program gives homeowners access to cash.">
+    <meta property="og:image" content="thumbnail.png">
+    <link rel="stylesheet" type="text/css" href="comparehomelenders.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.myadoptimizer.com/maojsfiles/JStemplates/AdOptimizerStyle.css">
+    <style type="text/css">
+        body {
+            background: #fff !important;        
+        }                                           
+    </style>
+</head>
+<body>
+    <div id="target">
+
+    </div>
+</body>
+<script>
+    var contHeight = 0;
+    window.onload = function(){
+        reloadParentSize();
+    }
+
+    function reloadParentSize(){
+        if(contHeight < document.getElementById("target").offsetHeight){
+           parent.reSizeIframe(); 
+           contHeight = document.getElementById("target").offsetHeight;
+        }
+        setTimeout(function(){reloadParentSize();},500);
+    }
+
+</script>
+<script type="text/javascript" src="https://cdn.myadoptimizer.com/maojsfiles/landingpagesjs/101fcc62-e848-49a0-9fbb-a73b0e2b2178.js"></script>
+</html>
