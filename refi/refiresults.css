@@ -610,7 +610,7 @@ header {
     float: left;
     width: calc(100% / 5);
     height: 100%;
-    background: #2f5597;
+    background: #cc3300;
     transition: all .3s ease;
 }
 
@@ -814,7 +814,7 @@ form button:active {
 
 .default {
     color: #fff;
-    background: #2f5597;
+    background: #cc3300;
 }
 
 .filter {
@@ -989,7 +989,7 @@ form button:active {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #2f5597;
+    background: #cc3300;
     cursor: pointer;
 }
 
@@ -997,7 +997,7 @@ form button:active {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #2f5597;
+    background: #cc3300;
     cursor: pointer;
 }
 
@@ -1010,7 +1010,7 @@ form button:active {
     line-height: 1;
     padding: 0;
     margin: 20px 0 0 0;
-    color: #2f5597;
+    color: #cc3300;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
