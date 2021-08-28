@@ -243,6 +243,10 @@ section {
     background: #fff;
 }
 
+.list {
+    padding: 0 14%;
+}
+
 section iframe {
     position: relative;
     display: block;
@@ -332,7 +336,7 @@ header {
     float: left;
     width: 100%;
     height: auto;
-    padding: 2% 14%;
+    padding: 1% 14%;
     margin: 0;
     background: #2f5597;
 }
@@ -341,27 +345,29 @@ header {
     position: relative;
     display: block;
     float: left;
-    width: 60%;
+    width: 100%;
     height: auto;
     padding: 0;
-    margin: 0 40% 0 0;
+    margin: 0;
     z-index: 666;
 }
 
 .head {
     display: block;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1;
     color: #fff;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
 }
 
 .head-sub {
     display: block;
     float: left;
-    font-size: 20px;
+    width: 60%;
+    margin: 0 40% 0 0;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1;
     color: #fff;
@@ -379,11 +385,12 @@ header {
 .update {
     display: block;
     float: left;
-    font-size: 14px;
-    font-weight: 300;
-    margin: 20px 0 0 0;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 0 0 10px;
     line-height: 1;
     color: #fff;
+    text-decoration: none;
 }
 
 .insurance {
@@ -506,7 +513,7 @@ header {
     width: 100%;
     height: auto;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .open {
@@ -517,7 +524,7 @@ header {
     float: left;
     width: auto;
     line-height: 1;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     color: #fff;
     cursor: pointer;
@@ -819,11 +826,13 @@ form button:active {
 
 .filter {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     float: left;
     width: 100%;
     height: auto;
-    padding: 2% 14%;
+    padding: 1% 14%;
     margin: 0;
     background: #E8E8E8;
 }
@@ -833,15 +842,15 @@ form button:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    float: left;
+    float: right;
     width: auto;
     height: 40px;
     padding:  0 20px;
-    margin: 0;
+    margin: 0 0 0 10px;
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background: #2f5597;
+    background: #28a745;
     border-radius: 10px;
 }
 
@@ -851,26 +860,41 @@ form button:active {
 
 .action {
     position: relative;
-    display: block;
-    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    float: left;
     width: auto;
     height: auto;
     padding: 0;
     margin: 0;
 }
 
-.action input {
+.action:before {
+    content:  "Customize Your Results:";
     position: relative;
     display: block;
     float: left;
     width: auto;
+    height: auto;
+    margin: 0 10px 0 0;
+    color: #2f5597;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.action input {
+    position: relative;
+    display: block;
+    float: left;
+    width: 90px;
     height: 40px;
     line-height: 1;
     padding: 0 15px;
     margin: 0;
     font-size: 14px;
     font-weight: 700;
-    color: #2f5597;
+    color: #28a745;
     background: #fff;
     border: 2px solid #ddd;
     border-right: 0;
@@ -879,7 +903,7 @@ form button:active {
 }
 
 .action input::placeholder {
-    color: #2f5597;
+    color: #28a745;
 }
 
 .action button {
@@ -896,7 +920,7 @@ form button:active {
     font-weight: 700;
     outline: 0;
     cursor: pointer;
-    background: #2f5597;
+    background: #28a745;
     border: 2px solid #ddd;
     border-radius: 0 10px 10px 0;
 }
@@ -947,7 +971,7 @@ form button:active {
 .type,
 .desc {
     float: left;
-    color: #2f5597;
+    color: #333;
 }
 
 .type {
@@ -1038,6 +1062,10 @@ form button:active {
 
 @media only screen and (max-width: 1000px) {
 
+    .list {
+        padding: 0 5%;
+    }
+
     .score {
         display: block;
     }
@@ -1048,16 +1076,16 @@ form button:active {
     }
 
     .big {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0 0 15% 0;
     }
 
     .big i {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     nav {
-        padding: 0 10%;
+        padding: 0 5%;
         height: 50px;
     }
 
@@ -1080,7 +1108,7 @@ form button:active {
     }
 
     header {
-        padding: 15% 10%;
+        padding: 5%;
     }
 
     .info {
@@ -1089,12 +1117,14 @@ form button:active {
     }
 
     .head {
-        font-size: 30px;
-        margin: 0 0 10% 0;
+        font-size: 20px;
+        margin: 0 0 5% 0;
     }
 
     .head-sub {
-        font-size: 16px;
+        font-size: 12px;
+        width: 100%;
+        margin: 0;
     }
 
     .drop {
@@ -1158,7 +1188,7 @@ form button:active {
     }
 
     footer {
-        padding: 10%;
+        padding: 5% 0;
     }
 
     footer .logo {
@@ -1202,8 +1232,7 @@ form button:active {
     }
 
     .update {
-        margin: 5% 0 0 0;
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .disclaimer {
@@ -1215,8 +1244,12 @@ form button:active {
     }
 
     .text {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 300;
+        margin: 0;
+    }
+
+    .show {
         margin: 5% 0 0 0;
     }
 
@@ -1292,7 +1325,7 @@ form button:active {
     }
 
     .loans {
-        padding: 15% 10%;
+        padding: 10% 5%;
     }
 
     .chunk {
@@ -1311,29 +1344,32 @@ form button:active {
 
     .desc {
         padding: 0;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .type {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0 0 5% 0;
     }
 
     .type i {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .pill {
+        float: left;
         width: 100%;
         height: auto;
         padding: 10px 0;
+        margin: 0;
         font-size: 12px;
         border-radius: 0;
         text-align: center;
-        background: #ffcc00;
+        background: #28a745;
     }
 
     .filter {
+        display: block;
         padding: 0;
     }
 
@@ -1343,7 +1379,13 @@ form button:active {
         float: right;
         width: 100%;
         height: auto;
-        padding: 5% 10%;
+        padding: 5%;
+        margin: 0;
+    }
+
+    .action:before {
+        content: "";
+        display: none;
         margin: 0;
     }
 

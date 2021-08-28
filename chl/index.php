@@ -97,10 +97,9 @@
         <header id="header">
             <div class="info">
                 <span class="head">Compare <i>Home Lender</i> Rates in <span class="location"></span> <span class="year"></span></span>
-                <span class="head-sub"><b>Compare Home Lenders, Mortgage Loan Rates, and more!</b><br><br>Compare top mortgage refinance lenders and review competitive rates in minutes. Find a rate rate, lower your monthly mortgage payment, take cash out and pay less interest.</span>
-                <span id="update" class="update"></span>
+                <span class="head-sub"><b>Compare Home Lenders, Mortgage Loan Rates, and more!</b><br><br>Compare top mortgage refinance lenders and review competitive rates in minutes. Find a rate, lower your monthly mortgage payment, take cash out and pay less interest.</span>
                 <span class="disclaimer">
-                    <span class="open"><i class="fas fa-file-contract"></i>Advertiser Discloser</span>
+                    <span class="open"><i class="fas fa-file-contract"></i>Advertiser Discloser<span id="update" class="update"></span></span>
                     <span class="text">
                         <script>document.write(window.location.hostname); </script> is a free online resource and we work hard to better the decision-making process of buying insurance online. To support this endeavor we may at times collect revenue from advertisers for qualified consumers who visit their site. Such compensation may impact the placement and order of our advertising partners on our page. We are not compensated for consumers who only view our content and work hard to provide a comprehensive list of quality insurance brands. 
                     </span>
@@ -108,18 +107,18 @@
             </div>
         </header>
         <div class="filter">
-            <div class="pill">
-                <i class="fas fa-map-marker-alt"></i><span class="region"></span>
-            </div>
             <form  id="action" class="action" action="" method="post">
                 <input type="number" pattern="[0-9]*" id="zip" name="zip" placeholder="Enter Zip Code..."
                     oninvalid="this.setCustomValidity('Enter a valid zipcode')"
                     oninput="this.setCustomValidity('')"required>
                 <button>Filter</button>
             </form>
+            <div class="pill">
+                <i class="fas fa-map-marker-alt"></i><span class="region"></span>
+            </div>
         </div>
         <section class="list">
-            <iframe id="results" scrolling="no" src="https://comparehomelenders.com/results-refinance.html" sandbox="allow-forms allow-scripts allow-same-origin allow-presentation allow-top-navigation allow-popups"></iframe>
+            <iframe id="results" scrolling="no" src="/results-refinance.html" sandbox="allow-forms allow-scripts allow-same-origin allow-presentation allow-top-navigation allow-popups"></iframe>
         </section>
         <div class="loans">
             <span class="big"><i class="fas fa-th-large"></i>Types of Mortgage Loans</span>

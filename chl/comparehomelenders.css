@@ -71,7 +71,7 @@ nav {
 
 .logo i {
     font-size: 30px;
-    color: #cc3300;
+    color: #2f5597;
     margin: 0 5px 0 0;
 }
 
@@ -111,7 +111,7 @@ nav {
     margin: 0;
     font-size: 18px;
     color: #fff;
-    background: #cc3300;
+    background: #2f5597;
     border-radius: 5px 0 0 5px;
 }
 
@@ -125,7 +125,7 @@ nav {
     margin: 0;
     font-size: 12px;
     font-weight: 700;
-    border: 4px solid #cc3300;
+    border: 4px solid #2f5597;
     border-left: 0;
     border-radius: 0 5px 5px 0;
 }
@@ -137,7 +137,7 @@ nav {
     line-height: 1;
     padding: 0;
     margin: 0 0 5px 0;
-    color: #cc3300;
+    color: #2f5597;
     text-transform: uppercase;
 }
 
@@ -174,16 +174,16 @@ footer {
 }
 
 footer .logo {
-    color: #cc3300;
+    color: #2f5597;
     font-size: 18px;
 }
 
 footer .logo:hover {
-    color: #cc3300;
+    color: #2f5597;
 }
 
 footer .logo i {
-    color: #cc3300;
+    color: #2f5597;
     font-size: 34px;
 }
 
@@ -338,7 +338,7 @@ header {
     height: auto;
     padding: 1% 14%;
     margin: 0;
-    background: #cc3300;
+    background: #2f5597;
 }
 
 .info {
@@ -379,7 +379,7 @@ header {
 
 .head i {
     font-style: normal;
-    color: #ff9966;
+    color: #ffcc00;
 }
 
 .update {
@@ -617,7 +617,7 @@ header {
     float: left;
     width: calc(100% / 5);
     height: 100%;
-    background: #cc3300;
+    background: #2f5597;
     transition: all .3s ease;
 }
 
@@ -755,7 +755,7 @@ form button {
     font-size: 14px;
     font-weight: 700;
     color: #fff;
-    background: #cc3300;
+    background: #2f5597;
     border: 0;
     border-radius: 5px;
     outline: 0;
@@ -821,7 +821,7 @@ form button:active {
 
 .default {
     color: #fff;
-    background: #cc3300;
+    background: #2f5597;
 }
 
 .filter {
@@ -878,7 +878,7 @@ form button:active {
     width: auto;
     height: auto;
     margin: 0 10px 0 0;
-    color: #cc3300;
+    color: #2f5597;
     font-size: 18px;
     font-weight: 700;
 }
@@ -985,7 +985,7 @@ form button:active {
 
 .type i {
     font-size: 28px;
-    color: #ff9966;
+    color: #ffcc00;
     margin: 0 5px 0 0;
 }
 
@@ -1013,7 +1013,7 @@ form button:active {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #cc3300;
+    background: #2f5597;
     cursor: pointer;
 }
 
@@ -1021,7 +1021,7 @@ form button:active {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #cc3300;
+    background: #2f5597;
     cursor: pointer;
 }
 
@@ -1034,7 +1034,7 @@ form button:active {
     line-height: 1;
     padding: 0;
     margin: 20px 0 0 0;
-    color: #cc3300;
+    color: #2f5597;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
@@ -1315,7 +1315,7 @@ form button:active {
         padding: 5px 10px;
         margin: 0;
         font-size: 8px;
-        background: #cc3300;
+        background: #2f5597;
         border: 0;
         border-radius: 5px;
     }
